@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    background-color: rgb(225, 225, 225);
+}
+
+/*// RESET INPUTS //*/
+
+input,textarea{
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea{
+    resize: none;
+    overflow-y: auto;
+}
+
+input[type=text]:focus,input[type=number]:focus,input[type=password]:focus,input[type=email]:focus,input[type=text]:focus,textarea:focus,select:focus,input[type=submit]:focus{
+    outline: 0;
+}
+
+/*// BOOTCSS //*/
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.w50{
+    width: 50%;
+    padding: 0 10px;
+}
+
+.w33{
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+/*// style //*/
+/*// header //*/
+
+header{
+    padding: 20px 0;
+
+    background-color: #3949ab;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header .logo a{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.desktop ul{
+    list-style: none;
+}
+
+.desktop li{
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.desktop li a{
+    font-size: 14px;
+}
+
+.desktop li a:hover{
+    text-decoration: underline;
+}
+
+/*// header end //*/
+/*// home //*/
+
+.box-login{
+    width: 100%;
+    max-width: 700px;
+
+    padding: 20px 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    background-color: white;
+    text-align: center;
+}
+
+.box-login h2{
+    margin-bottom: 20px;
+
+    color: #303f9f;
+    font-size: 19px;
+}
+
+.box-login input[type=text],
+.box-login input[type=password]{
+    width: 100%;
+    height: 40px;
+
+    margin-bottom: 10px;
+    padding-left: 8px;
+
+    border: 1px solid #ccc;
+}
+
+.box-login input[type=submit]{
+    width: 110px;
+    height: 34px;
+
+    display: block;
+
+    cursor: pointer;
+    border: 0;
+    background-color: #303f9f;
+    color: white;
+    font-weight: bold;
+}
+
+/*// end home //*/
+
+/*// área do aluno //*/
+.box{
+    margin-top: 10px;
+    padding: 30px;
+
+    background-color: white;
+}
+
+.apresentacao,
+.video-aula{
+    width: 100%;
+
+    margin-top: 10px;
+    padding: 60%;
+    position: relative;
+}
+
+.apresentacao iframe,
+.video-aula iframe{
+    width: 70%;
+    height: 70%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.welcome{
+    font-size: 24px;
+}
+
+.nome-modulo{
+    margin: 20px 0;
+
+    font-size: 19px;
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.nome-aula{
+    margin-top: 8px;
+
+    font-size: 17px;
+    border-bottom: 1px solid black;
+}
+
+.nome-aula a{
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.nome-aula svg{
+    margin-right: 8px;
+}
+
+h2.nome-aula{
+    text-align: center;
+    font-size: 24px;
+}
